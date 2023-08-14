@@ -1,0 +1,250 @@
+@import "dev";
+
+.logo {
+    width: 2em;
+    &:hover {
+        .logoBackPoly {
+            fill: var(--mainColorDarken);
+        }
+    }
+}
+.logoBackPoly {
+    fill: var(--mainColor);
+    @include transition(fill .3s ease);
+}
+.site-title {
+    &__text {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        font-family: 'scifiknights', arial, sans-serif;
+    }
+}
+
+.header {
+    width: 100%;
+    padding: 0 1em;
+    margin-bottom: 2em;
+    overflow: hidden;
+}
+.home, .post {
+    margin-bottom: 5em;
+}
+.post {
+    h2 {
+        margin-top: 1.2em;
+    }
+    pre[class*="language-"] {
+        margin-bottom: 1.5em;
+    }
+}
+.siteFooter {
+    color: var(--black);
+    padding: 0 1em;
+}
+.copyright {
+    font-size: 0.9em;
+}
+.aboutMeLink {
+    float: right;
+    margin-top: 1em;
+    cursor: pointer;
+    width: 1.8em;
+    position: relative;
+    z-index: 110;
+    span {
+        display: block;
+        background-color: var(--mainColor);
+        margin-bottom: 4px;
+        height: 4px;
+        width: 100%;
+        @include transition((
+            background-color .3s ease, 
+            height .3s ease, 
+            transform .5s ease, 
+            margin-top .5s ease,
+            opacity .3s ease
+            ));
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &:hover {
+        span {
+            background-color: var(--mainColorDarken);
+        }
+    }
+}
+.flyout {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    background-color: var(--mainColor);
+    color: #fff;
+    padding: 2.5em 2em 2em 2em;
+    line-height: 1.4em;
+    @include transition(top .4s ease);
+    z-index: 100;
+    a {
+        color: #fff;
+        text-decoration: underline;
+        &:hover {
+            color: var(--black);
+        }	    
+    }
+}
+.flyoutInner {
+    opacity: 0;
+    line-height: 1.4em;
+    @include transition(opacity .3s ease .4s);
+    p {
+        font-size: 1.6em;
+        margin-bottom: 0;
+    }
+}
+.flyoutExpanded {
+    top: 0;
+    .flyoutInner {
+        opacity: 1;
+    }
+}
+.closeFlyout {
+    position: fixed;
+    right: 1em;
+    top: 0;
+    span {
+        background-color: #fff;
+    }
+    &:hover {
+        span {
+            background-color: #fff;
+        }
+    }
+    .menu3 {
+        opacity: 0;
+    }
+    .menu1 {
+        @include transform(rotate(225deg));
+        margin-top: 0.5em;
+    }
+    .menu2 {
+        @include transform(rotate(-225deg));
+        margin-top: -0.5em;
+    }
+}
+/* POST LIST */
+
+.homeArticle {
+    margin-bottom: 4em;
+}
+.postLink {
+    color: var(--black);
+    &:hover {
+        text-decoration: underline;
+        color: var(--black);
+    }
+}
+.listPostDate {
+    font-size: 1rem;
+    color: var(--black);
+    margin-bottom: 0.5em;
+    display: block;
+    opacity: 0.8;
+}
+.featureImage {
+    max-width: 100%;
+    margin-bottom: 1em;
+}
+.postHeader {
+    padding: 0 1em;
+}
+.firstPost, .post {
+    .postHeader {
+        text-align: center;
+    }
+}
+.postContent {
+    padding: 0 1em;
+    strong {
+        font-family: 'kreonregular', sans-serif;
+    }
+    .astro-code {
+        padding: 0.8rem;
+        border-radius: 0.5rem;
+        margin-bottom: 2em;
+    }
+    .line {
+        font-size: 1.1rem;
+        line-height: 1.3em;
+    }
+}
+.contentFigure {
+    margin-bottom: 1em;
+    p {
+        margin-bottom: 0;
+    }
+    figcaption {
+        text-align: center;
+        color: var(--black);
+    }
+}
+.contentImage {
+    max-width: 100%;
+    margin-bottom: 1.5em;
+    &--center {
+        display: block;
+        margin: 0 auto 1.5em auto;
+    }
+}
+
+/* BUTTONS */
+
+.btnDefault {
+    position: relative;
+    color: #fff;
+    background-color:  var(--mainColor);
+    padding: 0.6em 1em;
+    font-family: 'kreonregular', arial, sans-serif;
+    display: inline-block;
+    line-height: 1.2em;
+    font-size: 1rem;
+    @include transition(background-color .3s ease);
+    &:hover {
+        background-color: var(--mainColorDarken);
+        color: #fff;
+        text-decoration: none;
+    }
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        top: -5px;
+        right: -5px;
+        background-color: #fff;
+        transform: rotate(45deg);
+    }
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        bottom: -5px;
+        right: -5px;
+        background-color: #fff;
+        transform: rotate(45deg);
+    }
+}
+.pagination {
+    padding: 1em;
+    margin-bottom: 2em;
+    &__link {
+        margin-right: 1rem;
+        font-size: 1.2rem;
+    }
+}

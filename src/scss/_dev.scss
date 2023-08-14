@@ -1,0 +1,29 @@
+html {
+	--mainH: 169;
+	--mainS: 94%;
+	--mainL: 27%;
+	--mainA: 1; 
+
+	--mainColor: hsl(var(--mainH) var(--mainS) var(--mainL) / var(--mainA));
+	--mainColorDarken: hsl(var(--mainH) var(--mainS) calc(var(--mainL) - 7%) / var(--mainA));
+
+	--black: #48484a;
+}
+
+$black: #48484a;
+
+@mixin transition ($defaultTransition: background-color 0.2s ease-in) {
+	-webkit-transition: $defaultTransition;
+	-moz-transition: $defaultTransition;
+	-ms-transition: $defaultTransition;
+	-o-transition: $defaultTransition;
+	transition: $defaultTransition;
+}
+
+@mixin transform ($defaultTransform: rotate(45deg)) {
+	-webkit-transform: $defaultTransform;
+	-moz-transform: $defaultTransform;
+	-ms-transform: $defaultTransform;
+	-o-transform: $defaultTransform;
+	transform: $defaultTransform;
+}

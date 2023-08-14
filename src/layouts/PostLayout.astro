@@ -1,0 +1,26 @@
+---
+import MainLayout from "./MainLayout.astro";
+import { formatDate } from "../js/utils";
+
+const { frontmatter } = Astro.props;
+const { title, date, featureImage } = frontmatter;
+---
+
+<MainLayout title={title}>
+    <article class="post">
+        <header class="postHeader">
+            <span class="listPostDate">
+                {formatDate(date)}
+            </span>
+          <h1>{title}</h1>
+        </header>
+        {featureImage && 
+        <div class="featureImageWrapper">
+          <img src={featureImage} class="featureImage" />
+        </div>
+        }
+        <div class={featureImage ? 'postContent featureImageContent' : 'postContent'}>
+            <slot />
+        </div>
+      </article>
+</MainLayout>

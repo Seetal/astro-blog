@@ -1,0 +1,29 @@
+---
+import { formatDate } from "../js/utils";
+const { post, firstPost, currentPage } = Astro.props;
+const styleFirstPost = firstPost && (currentPage === 1) && post.frontmatter.featureImage ? true : false;
+
+---
+
+<article class="homeArticle">
+    <div class="postHeader">
+        <span class="listPostDate">
+            {formatDate(post.frontmatter.date)}
+        </span>
+        <h2>
+            <a class="postLink" href={post.url}>{post.frontmatter.title}</a>
+        </h2>
+    </div>
+    {
+        styleFirstPost &&
+        <div class="featureImageWrapper">
+            <img src={post.frontmatter.featureImage} class="featureImage" />
+        </div>
+    }
+    <div class={styleFirstPost ? "postContent featureImageContent" : "postContent"}>
+        <p class="exerpt">
+          {post.frontmatter.excerpt}
+        </p>
+        <a href={post.url} class="btnDefault">more...</a> 
+    </div>  
+</article>

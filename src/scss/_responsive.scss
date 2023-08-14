@@ -1,0 +1,242 @@
+@media screen and (min-width: 43.75em) /* 700px */ {
+	h1 {
+		font-size: 5em;
+		.waiting-for-fonts & {
+			font-size: 3.2em;
+		}
+	}
+	h2 {
+		font-size: 3.5em;
+		.waiting-for-fonts & {
+			font-size: 2.03em;
+		}
+	}
+	p, .highlight, ul, ol, .pagination {
+		font-size: 1.4em;
+	}
+	.header, .postHeader, .postContent, .pagination {
+		padding: 0 1.5rem;
+	}
+	.listPostDate {
+		font-size: 1.2rem;
+	}
+	.homeArticle {
+		margin-bottom: 7em;
+	}
+	.btnDefault {
+		font-size: 1.1em;
+	}
+	.flyoutInner {
+		p {
+			font-size: 1.8em;
+		}
+	}
+	.closeFlyout {
+		right: 1.5em;
+	}
+	.siteFooter {
+		padding: 0 1.5em;
+	}
+	.pagination {
+		&__link {
+			font-size: 1.4rem;
+		}
+	}
+	.postContent {
+		.astro-code {
+			padding: 1rem;
+		}
+		.line {
+			font-size: 1.3rem;
+			line-height: 1.3em;
+		}
+	}
+}
+@media screen and (min-width: 56.25em) /* 900px */ {
+	h2 {
+		font-size: 5em;
+		.waiting-for-fonts & {
+			font-size: 3.2em;
+		}
+	}
+	.header, .postContent, .postHeader, .siteFooter, .pagination {
+		width: 37.5rem;
+		position: relative;
+		margin: auto;
+		padding: 0;
+	}
+	.pagination {
+		margin-bottom: 3em;
+	}
+	.header, .siteFooter {
+		margin-bottom: 2em;
+	}
+	.homeArticle {
+		overflow: hidden;
+		@supports (display: grid) {
+	        display: grid;
+	        grid-template-columns: 1fr 37.5em 1fr;
+	    }
+	}
+	.postHeader {
+		@supports (display: grid) {
+	        grid-column: 2 / 3;
+	        width: 100%;
+	    }
+	}
+	.postContent {
+		@supports (display: grid) {
+	        grid-column: 2 / 3;
+	        grid-row: 2;
+	        width: 100%;
+	    }
+	}
+	.featureImageContent {
+		@supports (display: grid) {
+	        grid-column: 2 / 3;
+	        grid-row: 3;
+	    }
+	}
+	.postList {
+		clear: right;
+	}
+	.post {
+		@supports (display: grid) {
+	        display: grid;
+	        grid-template-columns: 1fr 37.5em 1fr;
+	    }
+	}
+	.featureImageWrapper {
+		@supports (display: grid) {
+	        grid-column: 1 / 4;
+	        grid-row: 2;
+	    }
+	}
+	.featureImage {
+		margin-bottom: 2em;
+	}
+	.flyoutInner {
+		width: 37.5em;
+		position: relative;
+		margin: auto;
+		p {
+			font-size: 1.4em;
+		}
+	}
+	.flyout {
+		padding: 2em;
+	    height: 10em;
+	    position: relative;
+	    margin-top: -10em;
+	    @include transition(margin-top .4s ease);
+	}
+	.flyoutExpanded {
+	    margin-top: 0;
+	}
+	.closeFlyout {
+		position: relative;
+		right: auto;
+		span {
+			background-color: var(--mainColor);
+		}
+		&:hover {
+			span {
+				background-color: var(--mainColor);
+			}
+		}
+	}
+	.home, .post {
+	    margin-bottom: 10em;
+	}
+}
+@media screen and (min-width: 68.75em) /* 1100px */ {
+	h1 {
+		font-size: 8em;
+		.waiting-for-fonts & {
+			font-size: 4.8em;
+			letter-spacing: -1.2px;
+		}
+	}
+	.post {
+		h2 {
+			font-size: 4em;
+			.waiting-for-fonts & {
+				font-size: 3.2em;
+				margin-top: 1.3rem;
+			}
+		}
+	}
+	p, .highlight, ul, ol {
+		font-size: 1.4rem;
+	}
+	.homeArticle, .post {
+		@supports (display: grid) {
+	        grid-template-columns: 1fr 7.5em 45em 7.5em 1fr;
+	    }
+	}
+	.postContent, .postHeader, .siteFooter {
+		width: 45em;
+		position: relative;
+		margin: auto;
+	}
+	.postContent {
+		@supports (display: grid) {
+	        grid-column: 3 / 4;
+	        grid-row: 2;
+	    }
+	}
+	.header {
+		width: 60em;
+		position: relative;
+		margin: 0 auto 3em auto;
+		padding: 0;
+	}
+	.postHeader {
+		@supports (display: grid) {
+	        grid-column: 3 / 4;
+	        width: 100%;
+	    }
+	}
+	.firstPost, .post {
+		.postHeader {
+			width: 60em;
+			position: relative;
+			margin: auto;
+			padding: 0;
+			@supports (display: grid) {
+		        grid-column: 2 / 5;
+		        width: 100%;
+		    }
+		}
+	}
+	.featureImageWrapper {
+		width: calc((100% - 60em) / 2 + 60em);
+		@supports (display: grid) {
+	        grid-column: 1 / 5;
+	        grid-row: 2;
+	        width: 100%;
+	    }
+	}
+	.featureImageContent {
+		@supports (display: grid) {
+	        grid-column: 3 / 4;
+	        grid-row: 3;
+	    }
+	}
+	.flyoutInner {
+		width: 60em;
+		p {
+			font-size: 1.6em;
+		}
+	}
+	.flyout {
+	    height: 9em;
+	    margin-top: -9em;
+	} 
+	.flyoutExpanded {
+	    margin-top: 0;
+	}
+	.pagination {
+		width: 45rem;
+	}
+}
