@@ -128,10 +128,12 @@
 	    height: 10em;
 	    position: relative;
 	    margin-top: -10em;
-	    @include transition(margin-top .4s ease);
 	}
 	.flyoutExpanded {
 	    margin-top: 0;
+	}
+	.flyoutTransition {
+		@include transition(margin-top .4s ease);
 	}
 	.closeFlyout {
 		position: relative;

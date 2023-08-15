@@ -6,6 +6,10 @@
 <script type="text/javascript">
 	document.getElementById('aboutMeLink').onclick = function() {
 	  this.classList.toggle('closeFlyout');
-	  document.getElementById('flyout').classList.toggle('flyoutExpanded');
+	  const flyoutElement = document.getElementById('flyout');
+	  flyoutElement.classList.toggle('flyoutExpanded');
+	  if (!flyoutElement.classList.contains('flyoutTransition')) {
+		flyoutElement.classList.add('flyoutTransition');
+	  }
 	};
 </script>
