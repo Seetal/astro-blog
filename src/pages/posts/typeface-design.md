@@ -4,6 +4,7 @@ title: "Typeface Design"
 date: 2018-04-23
 published: true
 featureImage: '/images/scifi-knights.png'
+imageDimensions: { width: 1433, height: 522 }
 excerpt: 'Being a graphic designer I’ve always been intrigued by type and can often be found sitting in a meeting doodling different characters. I’ve always wanted to design a typeface but have been put off by the huge amount of work required.'
 tags: post
 ---

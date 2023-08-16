@@ -3,7 +3,7 @@ import MainLayout from "./MainLayout.astro";
 import { formatDate, slugify } from "../js/utils";
 
 const { frontmatter } = Astro.props;
-const { title, date, featureImage } = frontmatter;
+const { title, date, featureImage, imageDimensions } = frontmatter;
 ---
 
 <MainLayout title={title}>
@@ -18,7 +18,7 @@ const { title, date, featureImage } = frontmatter;
         </header>
         {featureImage && 
         <div class="featureImageWrapper">
-          <img src={featureImage} class="featureImage" />
+          <img src={featureImage} width={imageDimensions.width} height={imageDimensions.height} class="featureImage" />
         </div>
         }
         <div class={featureImage ? 'postContent featureImageContent' : 'postContent'}>

@@ -4,6 +4,7 @@ title: "Redesign of jin-long.co.uk"
 date: 2018-04-16
 published: true
 featureImage: '/images/jinlong-new.jpg'
+imageDimensions: { width: 1385, height: 832 }
 excerpt: 'Jin Long is the club I have trained wushu (Chinese martial arts) at since 2000. In that time I have redesigned the website 3 times, and just recently for the fourth time.'
 tags: post
 ---
