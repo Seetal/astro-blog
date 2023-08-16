@@ -21,19 +21,18 @@ export function formatDate(date) {
     return `${day}${nthNumber(day)} ${month}, ${year}`;
 }
 
-// export function formatBlogPosts(posts, {
-//   sortByDate = true,
-//   limit = undefined
-// } = {}) {
-//   // const filteredPosts = posts.reduce((acc, post) => {
-//   //   const { date } = post.frontmatter;
-//   // }, [])
-//   if(sortByDate) {
-//     posts.sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
-//   }
-// }
-
 export function orderByDate(posts) {
   posts.sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
   return posts;
+}
+
+export function slugify(str) {
+  return String(str)
+    .normalize('NFKD') // split accented characters into their base characters and diacritical marks
+    .replace(/[\u0300-\u036f]/g, '') // remove all the accents, which happen to be all in the \u03xx UNICODE block.
+    .trim() // trim leading or trailing whitespace
+    .toLowerCase() // convert to lowercase
+    .replace(/[^a-z0-9 -]/g, '') // remove non-alphanumeric characters
+    .replace(/\s+/g, '-') // replace spaces with hyphens
+    .replace(/-+/g, '-'); // remove consecutive hyphens
 }

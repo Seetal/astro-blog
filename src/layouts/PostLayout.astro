@@ -1,6 +1,6 @@
 ---
 import MainLayout from "./MainLayout.astro";
-import { formatDate } from "../js/utils";
+import { formatDate, slugify } from "../js/utils";
 
 const { frontmatter } = Astro.props;
 const { title, date, featureImage } = frontmatter;
@@ -12,7 +12,9 @@ const { title, date, featureImage } = frontmatter;
             <span class="listPostDate">
                 {formatDate(date)}
             </span>
-          <h1>{title}</h1>
+          <h1>
+            <span class="postTitle" style={`--transition-name: ${slugify(title)}`}>{title}</span>
+          </h1>
         </header>
         {featureImage && 
         <div class="featureImageWrapper">

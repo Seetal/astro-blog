@@ -199,6 +199,14 @@
         margin: 0 auto 1.5em auto;
     }
 }
+@media not (prefers-reduced-motion: reduce) {
+    .summaryTitle, .postTitle {
+        view-transition-name: var(--transition-name);
+    }
+}
+.postTitle {
+    display: inline-block;
+}
 
 /* BUTTONS */
 

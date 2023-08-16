@@ -1,5 +1,5 @@
 ---
-import { formatDate } from "../js/utils";
+import { formatDate, slugify } from "../js/utils";
 const { post, firstPost, currentPage } = Astro.props;
 const styleFirstPost = firstPost && (currentPage === 1) && post.frontmatter.featureImage ? true : false;
 
@@ -11,7 +11,7 @@ const styleFirstPost = firstPost && (currentPage === 1) && post.frontmatter.feat
             {formatDate(post.frontmatter.date)}
         </span>
         <h2>
-            <a class="postLink" href={post.url}>{post.frontmatter.title}</a>
+            <a class="postLink summaryTitle" style={`--transition-name: ${slugify(post.frontmatter.title)}`} href={post.url}>{post.frontmatter.title}</a>
         </h2>
     </div>
     {
