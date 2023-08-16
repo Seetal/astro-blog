@@ -6,7 +6,7 @@ published: true
 featureImage: '/images/scifi-knights.png'
 imageDimensions: { width: 1433, height: 522 }
 excerpt: 'Being a graphic designer I’ve always been intrigued by type and can often be found sitting in a meeting doodling different characters. I’ve always wanted to design a typeface but have been put off by the huge amount of work required.'
-tags: post
+tags: typography
 ---
 Being a graphic designer I’ve always been intrigued by type and can often be found sitting in a meeting doodling different characters. I’ve always wanted to design a typeface but have been put off by the huge amount of work required. Doing a search of google resulted in numbers like 150 hours per weight to 9 years per family, enough to put off even the most patient people. Until now (well, about 20 months ago actually).
 

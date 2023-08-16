@@ -2,7 +2,7 @@
 layout: '../../layouts/PostLayout.astro'
 title: 'JS Quick Tip: console.time'
 date: 2022-04-10
-tags: post
+tags: javascript
 excerpt: 'Console.time allows you to quickly test how long it takes for a block of javascript to execute.'
 permalink: '/posts/javascript-console-time/'
 

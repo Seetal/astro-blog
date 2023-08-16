@@ -3,7 +3,7 @@ layout: '../../layouts/PostLayout.astro'
 title: "BEM"
 date: 2017-03-01
 published: true
-tags: post
+tags: css
 excerpt: 'A little late to the party but I figured it’s about time I tried BEM. Having worked with a lot of existing projects and therefore legacy code over the last few years, I’ve had little chance to try any new css methodologies. Recently I started a smaller project so thought it was time to give BEM a try.'
 ---
 

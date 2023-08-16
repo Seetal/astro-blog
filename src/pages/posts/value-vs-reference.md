@@ -2,7 +2,7 @@
 layout: '../../layouts/PostLayout.astro'
 title: 'Javascript Value vs Reference'
 date: 2022-03-30
-tags: post
+tags: javascript
 excerpt: 'Value vs reference is an important concept in javascript and can be the source of many bugs if not understood correctly.'
 ---
 

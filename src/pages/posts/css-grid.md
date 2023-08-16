@@ -3,7 +3,7 @@ layout: '../../layouts/PostLayout.astro'
 title: "CSS Grid"
 date: 2018-04-09
 published: true
-tags: post
+tags: css
 excerpt: 'It’s been just over a year now since we first got support for CSS grid, that was in Firefox. I’ve put off learning much about grid because many of the projects in my day job need to support older browsers. Now that grid is supported in all major browsers, it’s about time I learnt.'
 ---
 

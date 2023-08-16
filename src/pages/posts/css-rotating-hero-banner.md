@@ -3,7 +3,7 @@ layout: '../../layouts/PostLayout.astro'
 title: "CSS Rotating Hero Banner"
 date: 2018-03-27
 published: true
-tags: post
+tags: css, sass
 excerpt: 'I recently gave myself a challenge of creating a rotating hero banner using only sass. Why would you want to do that, I hear you ask?'
 ---
 

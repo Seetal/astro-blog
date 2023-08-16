@@ -4,7 +4,7 @@ title: 'CSS Calc for Layouts'
 date: 2016-05-22
 featureImage: '/images/css-calc.png'
 imageDimensions: { width: 1433, height: 702 }
-published: true
+published: css
 tags: post
 excerpt: 'Whilst building this blog, I was struggling to find a way to do the css for the layout I had designed for a blog post page. The layout required is shown in the diagram above, its for wider screens so mainly desktop but some larger tablets would also fall into this range.'
 ---

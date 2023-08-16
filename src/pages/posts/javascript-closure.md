@@ -2,7 +2,7 @@
 layout: '../../layouts/PostLayout.astro'
 title: 'Javascript Closure'
 date: 2022-04-05
-tags: post
+tags: javascript
 excerpt: 'A closure is basically like a bundle of a function and any referenced variables in its lexical scope.'
 permalink: '/posts/javascript-closure/'
 
