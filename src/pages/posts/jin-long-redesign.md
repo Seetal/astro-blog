@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/PostLayout.astro'
 title: "Redesign of jin-long.co.uk"
-date: 2023-04-16
+date: 2018-04-16
 published: true
 featureImage: '/images/jinlong-new.jpg'
 imageDimensions: { width: 1385, height: 832 }
