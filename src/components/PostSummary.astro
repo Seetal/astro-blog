@@ -17,7 +17,7 @@ const styleFirstPost = firstPost && (currentPage === 1) && post.frontmatter.feat
     {
         styleFirstPost &&
         <div class="featureImageWrapper">
-            <img src={post.frontmatter.featureImage} class="featureImage" />
+            <img src={post.frontmatter.featureImage} width={post.frontmatter.imageDimensions.width} height={post.frontmatter.imageDimensions.height} class="featureImage" />
         </div>
     }
     <div class={styleFirstPost ? "postContent featureImageContent" : "postContent"}>
