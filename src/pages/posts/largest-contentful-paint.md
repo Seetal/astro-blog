@@ -1,6 +1,6 @@
 ---
 layout: '../../layouts/PostLayout.astro'
-title: 'Largest Contentful Paint - LCP - One of the Core Web Vitals'
+title: 'Largest Contentful Paint - LCP'
 date: 2022-04-21
 tags: post
 excerpt: 'One of the 3 Core Web Vitals (CWV), web.dev defines LCP as: ‘The Largest Contentful Paint (LCP) metric reports the render time of the largest image or text block visible within the viewport, relative to when the page first started loading’'
