@@ -258,3 +258,22 @@
         font-size: 1.2rem;
     }
 }
+.table {
+    width: 100%;
+    margin-bottom: 2rem;
+    caption {
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+    }
+    td, th {
+        border: 1px solid var(--light-grey);
+        padding: 0.5rem;
+        text-align: left;
+    }
+    th {
+        background-color: #eeeeee;
+    }
+    & .empty {
+        border: 0;
+    }
+}
