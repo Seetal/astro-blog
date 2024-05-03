@@ -2,8 +2,8 @@
 layout: '../../layouts/PostLayout.astro'
 title: 'Intervals & Workouts app'
 date: 2024-05-03
-tags: javascript, typescript, scss, game
-excerpt: 'It’s called BlockJham. It’s quite a simple game, you basically have to tap to swap blocks of the same size but different colours to create a full line of the same colour. '
+tags: react, typescript, scss, vite, storybook
+excerpt: 'I built a browser based app to create intervals and log workouts.'
 permalink: '/posts/intervals-and-workouts-app/'
 
 ---
