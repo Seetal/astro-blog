@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'scifiknights';
+  src: url('/fonts/scifi-knights-webfont.woff2') format('woff2'),
+      url('/fonts/scifi-knights-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+h1, h2 {
+  font-family: 'scifiknights', Impact, sans-serif;
+}

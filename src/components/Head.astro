@@ -1,5 +1,6 @@
 ---
 const { title } = Astro.props;
+import rawStylesCSS from '../css/type.css?raw';
 ---
 <head>
     <meta charset="utf-8" />
@@ -8,19 +9,7 @@ const { title } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <meta name="view-transition" content="same-origin" />
-    <style is:global>
-        @font-face {
-            font-family: 'scifiknights';
-            src: url('/fonts/scifi-knights-webfont.woff2') format('woff2'),
-                url('/fonts/scifi-knights-webfont.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-            font-display: swap;
-        }
-        h1, h2 {
-            font-family: 'scifiknights', Impact, sans-serif;
-        }
-    </style>
+    <style is:inline set:html={rawStylesCSS}></style>
     <title>{title}</title>
     <script>
         // // Define a FontFace
