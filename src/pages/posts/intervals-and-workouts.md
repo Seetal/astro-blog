@@ -3,12 +3,12 @@ layout: '../../layouts/PostLayout.astro'
 title: 'Intervals & Workouts app'
 date: 2024-05-03
 tags: react, typescript, scss, vite, storybook
-excerpt: 'I built a browser based app to create intervals and log workouts.'
+excerpt: 'I built a web app to create intervals and log workouts.'
 permalink: '/posts/intervals-and-workouts-app/'
 
 ---
 
-I built a browser based app to create intervals and log workouts. Check it out over at [intervals-workouts.pages.dev](https://intervals-workouts.pages.dev).
+I built a web app to create intervals and log workouts. Check it out over at [intervals-workouts.pages.dev](https://intervals-workouts.pages.dev).
 
 <img src="/images/interval-workouts.webp" class="contentImage" alt="Screen shot of intervals and workouts app" />
 
