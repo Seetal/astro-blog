@@ -102,6 +102,8 @@ Last year I built a web app to log my workouts and create intervals, you can rea
 
 ## Usage
 
+Code is availble at [Github](https://github.com/Seetal/Countdown-Web-Component).
+
 Link to the countdown-timer.js file.
 
 Add the following html:
